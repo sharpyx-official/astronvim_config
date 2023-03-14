@@ -34,6 +34,24 @@ return {
   --   end,
   -- },
   -- {
+  --   "nvim-neo-tree/neo-tree.nvim",
+  --   config = function(plugin, opts)
+  --     -- require("plugins.configs.neo-tree")(plugin, opts)
+  --     -- local neotree = require('neo-tree')
+  --     -- neotree.config = {
+  --     --   window = {
+  --     --     width = 55
+  --     --   }
+  --     -- }
+  --     local neotree = require('neo-tree')
+  --     neotree.config = {
+  --       window = {
+  --         width = 55
+  --       }
+  --     }
+  --   end
+  -- }
+  -- {
   --   "windwp/nvim-autopairs",
   --   config = function(plugin, opts)
   --     plugin.default_config(opts) -- include the default astronvim config that calls the setup call
