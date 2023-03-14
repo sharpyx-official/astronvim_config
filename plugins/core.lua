@@ -27,34 +27,16 @@ return {
   -- {
   --   "L3MON4D3/LuaSnip",
   --   config = function(plugin, opts)
-  --     plugin.default_config(opts) -- include the default astronvim config that calls the setup call
+  --     require "plugins.configs.luasnip"(plugin, opts) -- include the default astronvim config that calls the setup call
   --     -- add more custom luasnip configuration such as filetype extend or custom snippets
   --     local luasnip = require "luasnip"
   --     luasnip.filetype_extend("javascript", { "javascriptreact" })
   --   end,
   -- },
   -- {
-  --   "nvim-neo-tree/neo-tree.nvim",
-  --   config = function(plugin, opts)
-  --     -- require("plugins.configs.neo-tree")(plugin, opts)
-  --     -- local neotree = require('neo-tree')
-  --     -- neotree.config = {
-  --     --   window = {
-  --     --     width = 55
-  --     --   }
-  --     -- }
-  --     local neotree = require('neo-tree')
-  --     neotree.config = {
-  --       window = {
-  --         width = 55
-  --       }
-  --     }
-  --   end
-  -- }
-  -- {
   --   "windwp/nvim-autopairs",
   --   config = function(plugin, opts)
-  --     plugin.default_config(opts) -- include the default astronvim config that calls the setup call
+  --     require "plugins.configs.nvim-autopairs"(plugin, opts) -- include the default astronvim config that calls the setup call
   --     -- add more custom autopairs configuration such as custom rules
   --     local npairs = require "nvim-autopairs"
   --     local Rule = require "nvim-autopairs.rule"
@@ -84,7 +66,7 @@ return {
   -- {
   --   "folke/which-key.nvim",
   --   config = function(plugin, opts)
-  --     plugin.default_config(opts)
+  --     require "plugins.configs.which-key"(plugin, opts) -- include the default astronvim config that calls the setup call
   --     -- Add bindings which show up as group name
   --     local wk = require "which-key"
   --     wk.register({
